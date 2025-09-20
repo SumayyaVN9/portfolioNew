@@ -1,6 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { BsArrowRightCircle } from "react-icons/bs";
-import headerImage from "../assets/img/header-img.svg"; // optional
 
 export const Banner = () => {
   return (
