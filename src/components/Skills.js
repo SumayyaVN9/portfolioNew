@@ -2,14 +2,14 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export const Skills = () => {
   const skillsList = [
-    "Android Development",
-    "Software Development",
+    "MongoDB",
     "Figma",
-    "Kotlin",
+    "CSS",
+    "MERN Stack",
+    "javascript",
     "XML",
-    "Front-End Development",
-    "MERN",
-    "HTML, CSS"
+    "HTML",
+    "Python"
   ];
 
   return (
@@ -20,8 +20,7 @@ export const Skills = () => {
             <div className="skill-bx text-center">
               <h2>Skills</h2>
               <p>
-                I am familiar with using these skills in my project development and I am looking forward to learning more.
-              </p>
+               I have worked with these skills in my projects and am eager to grow further.   </p>
               <div className="skills-row">
                 {skillsList.map((skill, index) => (
                   <div className="skill-item" key={index}>{skill}</div>
