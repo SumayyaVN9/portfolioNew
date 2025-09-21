@@ -11,9 +11,8 @@ export const Banner = () => {
               <h1>Hi, I'm <span>Sumayya V N</span></h1>
               <h4>Software Developer</h4>
               <p>
-               I’m currently pursuing a vocational degree in Software Application Development at CUSAT.
-I’m a passionate Software Developer with a focus on building modern, user-friendly applications and systems.
-Let’s create something great together!
+               I’m a passionate Software Developer with a focus on building modern, user-friendly applications and systems.
+               Let’s create something great together!
               </p>
               <Button
                 onClick={() =>

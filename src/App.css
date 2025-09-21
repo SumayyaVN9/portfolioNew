@@ -305,6 +305,36 @@ span.navbar-text {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+/***************About*****************/
+.about-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Arial", sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-container h3 {
+  font-size: 28px;
+  color: #d4a373; /* Accent color */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-container p {
+  font-size: 18px;
+  color: #555;
+  text-align: justify;
+}
+
+.about-container strong {
+  color: #000; /* highlight keywords */
+  font-weight: 600;
+}
 
 /************ Skills Css ************/
 
@@ -324,10 +354,10 @@ span.navbar-text {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -8px; /* 8px below the text */
+  bottom: -8px; 
   width: 20%;
   margin-left: 40%;
-  height: 4px; /* thickness of the underline */
+  height: 4px; 
   background: linear-gradient(90deg, #faedcd, #faedcd);
   transform: scaleX(0); /* initially invisible */
   transform-origin: right;
@@ -485,6 +515,131 @@ span.navbar-text {
 
 
 
+/************education*******************/
+
+.education-container {
+   max-width: 700px;
+  margin: 40px auto;
+  margin-left: 10%;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.education-container h1 {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 10%;
+  color: #5a5a5a;
+  position: relative;
+  text-align: left;
+}
+
+.education-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-container li {
+  position: relative;
+  padding: 15px 20px;
+  gap: 5%;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  cursor: default;
+  overflow: hidden; 
+}
+
+.education-container li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: #d4a373;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+}
+
+.education-container li:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+
+.education-container li {
+  border-left: 3px solid #faedcd;
+}
+
+.education-container li strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #5a5a5a;
+}
+
+.education-container li span {
+  display: block;
+  color: #9b9999;
+  padding: 1%;
+  font-size: 0.95rem;
+}
+
+.education-container li em {
+  display: block;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* .education-container {
+  max-width: 700px;
+  margin: 40px auto;
+  margin-left: 10%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.education-container h1 {
+ font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #5a5a5a;
+  position: relative;
+  text-align: left;
+}
+
+.education-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education-container li {
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 4px solid #007bff; 
+  border-radius: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.education-container li strong {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #414243;
+} */
 
 
 /************ contact Css ************/
