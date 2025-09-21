@@ -180,7 +180,7 @@ span.navbar-text {
   width: 125%;
   padding: 30px; 
   border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(116, 20, 87, 0.1); 
+  box-shadow: 0 2px 4px rgba(116, 20, 87, 0.1); 
   border-bottom: 3px solid #949697;
   margin-bottom: 10px;
   margin-left: 27%;
@@ -310,13 +310,15 @@ span.navbar-text {
   max-width: 800px;
   margin: 80px auto;
   padding: 40px;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  font-family: "Arial", sans-serif;
-  line-height: 1.7;
+  /* font-family: "Arial", sans-serif;x */
+  line-height: 2.1;
   color: #333;
+  margin-left: 10%;
+  border-left: 3px solid #d4a373;
+
 }
+
+
 
 .about-container h3 {
   font-size: 28px;
@@ -326,17 +328,25 @@ span.navbar-text {
 }
 
 .about-container p {
+  color: #8a8a8a;
   font-size: 18px;
-  color: #555;
-  text-align: justify;
+  letter-spacing: 0.8px;
+  line-height: 1.8em;;
+  width: 100%;
+  margin-left: 5%;
+
+  margin-right: 5%;
 }
 
-.about-container strong {
-  color: #000; /* highlight keywords */
+/* .about-container strong {
+  color: #8a8a8a; 
   font-weight: 600;
-}
+} */
 
 /************ Skills Css ************/
+.skill-bx{
+  margin-left: -9%;
+}
 
 .skill-bx h2 {
   font-size: 64px;
@@ -344,8 +354,9 @@ span.navbar-text {
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 1.2;
+  padding-left: 4%;
   margin-bottom: 20px;
-  text-align: center; 
+  text-align: left; 
   color: #5a5a5a;
   position: relative; 
 }
@@ -353,10 +364,11 @@ span.navbar-text {
 .skill-bx h2::after {
   content: "";
   position: absolute;
+  padding-left: 20%;
   left: 0;
   bottom: -8px; 
   width: 20%;
-  margin-left: 40%;
+  /* margin-left: -2%; */
   height: 4px; 
   background: linear-gradient(90deg, #faedcd, #faedcd);
   transform: scaleX(0); /* initially invisible */
@@ -374,19 +386,17 @@ span.navbar-text {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
+  text-align: left;
   padding: 5%;
   width: 96%;
-  margin-left: 5%;
   margin-right: 5%;
 }
 
 .skills-row {
   display: flex;
-  flex-wrap: wrap; /* wrap to next line on small screens */
+  flex-wrap: wrap; 
   justify-content: center;
-
   margin-bottom: 20%;
-
   gap: 40px;
 }
 
@@ -395,7 +405,7 @@ span.navbar-text {
   background-color: #d4a373;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: 500;
   transition: background 0.3s ease, transform 0.2s ease; 
 }
@@ -598,48 +608,6 @@ span.navbar-text {
   font-size: 0.9rem;
 }
 
-/* .education-container {
-  max-width: 700px;
-  margin: 40px auto;
-  margin-left: 10%;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-}
-
-.education-container h1 {
- font-size: 64px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  color: #5a5a5a;
-  position: relative;
-  text-align: left;
-}
-
-.education-container ul {
-  list-style: none;
-  padding: 0;
-}
-
-.education-container li {
-  margin-bottom: 15px;
-  padding: 15px 20px;
-  border-left: 4px solid #007bff; 
-  border-radius: 6px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-
-.education-container li strong {
-  display: block;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #414243;
-} */
 
 
 /************ contact Css ************/
@@ -649,11 +617,8 @@ span.navbar-text {
   margin: 50px auto;
   padding: 25px;
   border-radius: 12px;
-  /* background-color: #f9f9f9; */
-  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); */
   font-family: "Arial", sans-serif;
 }
-
 .contact-container h2 {
   font-size: 64px;
   font-weight: 800;
@@ -664,6 +629,25 @@ span.navbar-text {
   position: relative;
   text-align: left;
 }
+
+.contact-container h2::after {
+  content: "";
+  position: absolute;
+  left: -1%;  /* keeps margin effect */
+  bottom: -8px; 
+  width: 40%;
+  height: 4px; 
+  background: linear-gradient(90deg, #faedcd, #faedcd);
+  transform: scaleX(0); 
+  transform-origin: right;
+  transition: transform 0.4s ease; /* smooth animation */
+}
+
+.contact-container h2:hover::after {
+  transform: scaleX(1); 
+  transform-origin: left;
+}
+
 
 .contact-content {
   display: flex;
@@ -702,7 +686,6 @@ span.navbar-text {
   text-decoration: underline;
 }
 
-/* Right side (form) */
 .contact-form {
   flex: 1;
   min-width: 250px;
@@ -763,7 +746,6 @@ span.navbar-text {
   margin-top: 10px;
 }
 
-/* Responsive: stack left and right on small screens */
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
