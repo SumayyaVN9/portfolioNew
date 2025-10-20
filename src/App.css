@@ -1,3 +1,107 @@
+/* Smartphones */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav.navbar .navbar-nav .nav-link.navbar-link {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .banner {
+        padding: 180px 20px 60px 20px; /* reduce padding for small screens */
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .banner h4 {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .banner p {
+        font-size: 16px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .banner button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-container {
+        margin-left: 5%;
+        padding: 20px;
+    }
+
+    .skills-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .education-container {
+        margin-left: 5%;
+        padding: 10px;
+    }
+
+    .contact-container {
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner h1 {
+        font-size: 48px;
+    }
+
+    .banner h4 {
+        font-size: 20px;
+    }
+
+    .projects-container {
+        flex-wrap: wrap;
+    }
+
+    .project-item {
+        min-width: 45%;
+        max-width: 45%;
+    }
+}
+
+
 /*Custom font */
 @font-face {
   font-family: Centra;
@@ -210,15 +314,24 @@ span.navbar-text {
   position: relative;
 }
 
-.banner h1 span {
+/* .banner h1 span {
   color: #ff6f61; 
-  /* background: linear-gradient(90deg, #d4a373, #a0570e); */
-  background: linear-gradient(90deg, #d4a373, #d4a373);
+   background: linear-gradient(90deg, #d4a373, #d4a373);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   position: relative;
+} */
+ .banner h1 span {
+  color: #ff6f61; 
+  background: linear-gradient(90deg, #d4a373, #d4a373);
+  background-clip: text;            /* Add this line for standard compatibility */
+  -webkit-background-clip: text;    /* For Chrome/Safari */
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible through text */
+  font-weight: 900;
+  position: relative;
 }
+
 
 
 
