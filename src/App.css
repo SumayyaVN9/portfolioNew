@@ -36,6 +36,11 @@
     padding: 200px 60px 80px 60px;
     text-align: center;
   }
+   .banner h1 {
+    font-size: 30px !important;
+    /* text-align: center; */
+  }
+   
 
   .banner button {
     margin: 30px auto 0 auto;
@@ -397,9 +402,9 @@ span.navbar-text {
     margin-right: auto;
     text-align: center;
     display: block;
-  /* margin-left: auto; */
+  margin-left: auto;
 
-  margin-left: 40%;
+  /* margin-left: 40%; */
 
 }
 .banner button:hover{
