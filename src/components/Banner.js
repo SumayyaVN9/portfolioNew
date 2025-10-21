@@ -6,7 +6,7 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+          {/* <Col xs={12} md={6} xl={7}> */}
             <div className="box">
               <h1>Hi, I'm <span>Sumayya V N</span></h1>
               <h4>Software Developer</h4>
@@ -37,7 +37,7 @@ export const Banner = () => {
     Resume <BsArrowRightCircle className="btn-icon" />
   </Button>
             </div>
-          </Col>
+          {/* </Col> */}
         </Row>
       </Container>
     </section>
