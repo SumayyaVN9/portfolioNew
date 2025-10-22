@@ -3,6 +3,8 @@ import { Navbar,Container,Nav } from "react-bootstrap"
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
 import navIcon3 from '../assets/img/nav-icon3.svg'
+import navIcon4 from '../assets/img/gitimg.svg'
+
 
 
 export const NavBar = () => {
@@ -44,7 +46,7 @@ export const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icon">
                 <a href="https://www.linkedin.com/in/sumayya-v-n-09aaa629b"target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn Icon"/></a>
-                <a href='#'><img src={navIcon2} alt=""/></a>
+                <a href='https://github.com/SumayyaVN9'><img src={navIcon4} alt=""/></a>
                 <a href="https://www.instagram.com/sumayya__sumi__"
                     target="_blank"
                     rel="noopener noreferrer">
