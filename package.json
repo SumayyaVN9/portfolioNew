@@ -8,12 +8,7 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
-    "body-parser": "^2.2.0",
     "bootstrap": "^5.3.5",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "nodemailer": "^7.0.9",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.1.0",
@@ -47,8 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "server.js",
+  "description": "This project was bootstrapped with Create React App.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SumayyaVN9/portfolioNew.git"
@@ -58,7 +52,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SumayyaVN9/portfolioNew/issues"
-  },
-  "homepage": "https://SumayyaVN9.github.io/portfolioNew"
-
+  }
 }
