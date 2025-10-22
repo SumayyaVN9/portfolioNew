@@ -87,9 +87,9 @@ html, body { overflow-x: hidden; }
   content: "";
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -2px;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg,#faedcd,#faedcd);
   transform: scaleX(0);
   transform-origin: right;
@@ -161,31 +161,45 @@ html, body { overflow-x: hidden; }
   .banner h1 { font-size: 48px; line-height: 1.12; }
   .banner h1 span { font-size: 48px; display: block; }
   .banner h4 { font-size: 20px; }
-  .banner p { font-size: 17px; max-width: 60ch; text-align: left; }
-  .btn-cta, .banner button { width: min(70%, 520px); padding: 12px 20px; font-size: 17px; }
+  .banner p { font-size: 17px; max-width: 60ch; text-align: left; margin-bottom: 5% !important;}
+  .btn-cta, .banner button { width: min(70%, 520px); padding: 12px 20px; font-size: 17px;; }
 }
 
 /* ---------------- Desktop (>= 1025px) ---------------- */
 @media (min-width: 1025px) {
-  .banner {
+   .banner {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 72vh;
     padding: 180px 100px;
     text-align: center;
   }
 
-  .banner .inner { max-width: 980px; padding: 0 18px; }
-  .box { max-width: 980px; padding: 28px; border-radius: 12px; }
+  /* Inner wrapper: constrain width */
+  .banner .inner {
+    width: auto;            /* shrink to fit content */
+    max-width: 500px;       /* smaller than before */
+    margin: 0 auto;         /* center horizontally */
+    text-align: center;
+    padding: 0 12px;
+    flex: none;             /* prevent flex-grow */
+  }
+
+  /* Card box: also constrained */
+  .box {
+    width: 100%;            /* take full inner width */
+    max-width: 500px;       /* same as inner */
+    margin: 0 auto;
+    padding: 28px;
+    border-radius: 12px;
+  }
   .banner h1 { font-size: 64px; line-height: 1.12; }
-  .banner h1 span { font-size: 64px; display: block; }
-  .banner h4 { font-size: 23px; }
+  .banner h1 span { font-size: 64px; display: inline; }
+  .banner h4 { font-size: 23px;margin-top: 3% }
   .banner p { font-size: 18px; max-width: 70ch; text-align: left; }
   .btn-cta, .banner button { width: auto; padding: 12px 22px; font-size: 18px; }
 }
-
-html, body { overflow-x: hidden; }
 /*Custom font */
 @font-face {
   font-family: Centra;
