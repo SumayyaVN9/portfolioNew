@@ -130,6 +130,9 @@ export const Contact = () => {
         body: JSON.stringify(form),
       });
 
+     
+
+
       const result = await response.json();
       setButtonText("Send");
       setForm({
