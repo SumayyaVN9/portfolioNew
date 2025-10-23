@@ -31,6 +31,6 @@ A web developer and designer passionate about creating modern, responsive websit
 ## 📫 Contact
 
 - **Email:** [suminoushad@gmail.com](mailto:suminoushad101@gmail.com)  
-- **Portfolio Website:** [https://sumayya-vn.vercel.app/](https://sumayya-vn.vercel.app/)
+- **Portfolio Website:** [https://www.sumayyavn.dev/](https://www.sumayyavn.dev/)
 
 ---
