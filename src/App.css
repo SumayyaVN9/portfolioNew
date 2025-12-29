@@ -300,7 +300,7 @@ nav.navbar {
 nav.navbar.scrolled {
   background-color: #ffffff; /* keep it white even when scrolled */
   padding: 12px 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* subtle shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); 
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -383,7 +383,7 @@ span.navbar-text {
 
 .about-container h3 {
   font-size: 28px;
-  color: #d4a373; /* Accent color */
+  color: #d4a373; 
   margin-bottom: 20px;
   text-align: left;
 }
@@ -399,121 +399,159 @@ span.navbar-text {
   margin-right: 5%;
 }
 
-/* .about-container strong {
-  color: #8a8a8a; 
-  font-weight: 600;
-} */
 
 /************ Skills Css ************/
-.skill-bx{
-  margin-left: -9%;
+
+.skill-bx {
+  padding: 60px 0;
 }
 
 .skill-bx h2 {
   font-size: 64px;
-  margin-top: 10%;
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 1.2;
-  padding-left: 4%;
   margin-bottom: 20px;
-  text-align: left; 
+  text-align: left;
   color: #5a5a5a;
-  position: relative; 
+  position: relative;
 }
 
 .skill-bx h2::after {
   content: "";
   position: absolute;
-  padding-left: 20%;
   left: 0;
-  bottom: -8px; 
-  width: 20%;
-  /* margin-left: -2%; */
-  height: 4px; 
-  background: linear-gradient(90deg, #faedcd, #faedcd);
-  transform: scaleX(0); /* initially invisible */
-  transform-origin: right;
+  bottom: -8px;
+  width: 120px;
+  height: 4px;
+  background: #faedcd;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 0.4s ease;
 }
 
-  .skill-bx h2:hover::after {
-  transform: scaleX(1); /* grow from right to left */
-  transform-origin: left;
+.skill-bx h2:hover::after {
+  transform: scaleX(1);
 }
 
 .skill-bx p {
   color: #8a8a8a;
   font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
+  line-height: 1.6;
   text-align: left;
-  padding: 5%;
-  width: 96%;
-  margin-right: 5%;
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+.skill-category {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.skill-category h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #737373;
+  margin: 0;
+}
+.skill-category h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #737373;
+  margin-top: 1%;
+  margin-right: 3%;
 }
 
 .skills-row {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center;
-  margin-bottom: 20%;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .skill-item {
-  display: inline-block;
+  position: relative;
+  overflow: hidden;
   background-color: #d4a373;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 10px 22px;
+  border-radius: 12px;
   font-weight: 500;
-  transition: background 0.3s ease, transform 0.2s ease; 
+  transition: all 0.3s ease;
+}
+
+.skill-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.skill-item:hover::before {
+  left: 100%;
 }
 
 .skill-item:hover {
-  background-color: #cc8844;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #cc8844 0%, #b87939 100%);
+  box-shadow: 0 8px 20px rgba(212, 163, 115, 0.4);
 }
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
   .skill-bx {
-    margin-left: 0;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
   }
 
   .skill-bx h2 {
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
-    padding-left: 0;
   }
 
   .skill-bx h2::after {
-    width: 50%;
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%) scaleX(1);
   }
 
   .skill-bx p {
     font-size: 16px;
     text-align: center;
-    padding: 10px;
+    margin: 0 auto 30px;
+  }
+
+
+  .skill-category {
+    grid-template-columns: 1fr;   
+    row-gap: 14px;
+    text-align: center;
+  }
+
+  .skill-category h4 {
+    text-align: center;
+    font-size: 18px;
+  }
+   .skill-category h5 {
+    display: none;
   }
 
   .skills-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 10%;
+    justify-content: center;
   }
 
   .skill-item {
-    width: 80%;
-    padding: 12px 0;
-    text-align: center;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 9px 16px;
   }
 }
+
 
 /************ Projects Css ************/
 
